@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>333体育 · 简明访问指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #fafbfc;
+      color: #1e2a3a;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.4rem 1.5rem 3.2rem;
+    }
+
+    /* hero */
+    .hero {
+      margin-bottom: 3.2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #121926;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #4a5568;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* 通用区块 */
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 520;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid #e6edf2;
+      color: #1e2a3a;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 1.2rem 0 0.3rem;
+      color: #1f2a3f;
+    }
+    p {
+      margin-bottom: 0.9rem;
+      color: #2d3748;
+    }
+    ul {
+      list-style: none;
+      margin: 0.8rem 0 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.3rem;
+      position: relative;
+    }
+    li::before {
+      content: "·";
+      position: absolute;
+      left: 0.3rem;
+      color: #3b6e9f;
+      font-weight: 600;
+    }
+
+    /* 卡片 & 提示 */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .card-item {
+      flex: 1 1 180px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 1.1rem 1rem;
+      border: 1px solid #e2e9f0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: box-shadow 0.15s;
+    }
+    .card-item strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 540;
+      color: #1a2636;
+    }
+    .card-item span {
+      font-size: 0.9rem;
+      color: #4b5a6e;
+    }
+
+    .note-box {
+      background: #f0f4f9;
+      border-left: 4px solid #3b6e9f;
+      padding: 1rem 1.2rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.4rem 0;
+      font-size: 0.95rem;
+      color: #1e2d44;
+    }
+    .note-box strong {
+      font-weight: 550;
+    }
+
+    /* FAQ 摘要 */
+    .faq-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e9eef4;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 510;
+      color: #15212e;
+    }
+    .faq-a {
+      margin-top: 0.1rem;
+      font-size: 0.95rem;
+      color: #3b4a5c;
+    }
+
+    /* 底部 */
+    .footer {
+      border-top: 1px solid #e2e9f0;
+      margin-top: 2.8rem;
+      padding-top: 1.6rem;
+      font-size: 0.9rem;
+      color: #5b6c7e;
+      text-align: center;
+    }
+    .footer a {
+      color: #1e2a3a;
+      text-decoration: none;
+      border-bottom: 1px dotted #a6b9cb;
+    }
+    .footer a:hover {
+      border-bottom-color: #1e2a3a;
+    }
+
+    /* 内嵌链接样式 */
+    a {
+      color: #1a5a8c;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      transition: color 0.1s;
+    }
+    a:hover {
+      color: #0d3b5e;
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        padding: 1.8rem 1rem 2.4rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .card-grid {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .card-item {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <h1>333体育 · 简明访问指南</h1>
+    <p>从域名识别到内容预期，一份面向普通用户的知识型参考，帮助你更清晰地了解这个平台。</p>
+  </div>
+
+  <section>
+    <h2>平台定位与域名背景</h2>
+    <p><a href="https://cctv-333sport.com">333体育</a> 以体育资讯与赛事相关内容为主，域名结构采用了「cctv‑333sport」的组合形式。需要说明的是，该域名与中央电视台（CCTV）及其任何官方平台均无关联，仅为独立运营的网络站点。用户在访问时应先留意域名拼写与实际意图，避免与其他同名或相似品牌混淆。</p>
+    <p>从命名习惯来看，数字「333」可能是为了增强识别度或品牌关联性，但该平台并非任何大型机构的子站点，因此将其视作一个独立的体育内容渠道更为恰当。</p>
+  </section>
+
+  <section>
+    <h2>平台特点与内容方向</h2>
+    <div class="card-grid">
+      <div class="card-item">
+        <strong>体育赛事信息</strong>
+        <span>涵盖热门联赛、杯赛的赛程、比分及基本数据聚合。</span>
+      </div>
+      <div class="card-item">
+        <strong>资讯更新节奏</strong>
+        <span>内容更新频率不固定，部分时段可能存在延迟，建议多源对比。</span>
+      </div>
+      <div class="card-item">
+        <strong>界面与导航</strong>
+        <span>页面结构偏向传统列表式布局，分类入口直接，无过多交互层级。</span>
+      </div>
+    </div>
+    <p>网站主要面向对体育赛果及简短资讯有需求的浏览者。若你想快速了解某项赛事的近期结果或赛前信息，<a href="https://cctv-333sport.com">333体育</a> 可能提供一个快速检索的切入点。但需留意其数据来源并未公开标注，因此对于关键比分或官方公告，建议同时参考联赛官网或权威体育媒体。</p>
+  </section>
+
+  <section>
+    <h2>访问场景与实用提示</h2>
+    <p>根据实际使用观察，以下场景下该平台可能具有一定参考价值：</p>
+    <ul>
+      <li>搜索特定联赛的即时比分或已结束场次的结果汇总；</li>
+      <li>浏览赛事短讯，获取比赛焦点或简要回顾；</li>
+      <li>作为备选信息源，与主流体育平台交叉验证数据一致性。</li>
+    </ul>
+    <div class="note-box">
+      <strong>访问提醒：</strong> 由于网站未采用 HTTPS 加密（或证书不受主流浏览器信任），在输入任何个人信息或进行账户操作前请保持谨慎。建议仅用于纯内容浏览，并保持浏览器安全设置处于推荐级别。
+    </div>
+    <p>同时，若页面加载出现异常或跳转提示，可能是由于域名解析或服务器稳定性波动所致。此时可稍后重试，或通过搜索引擎确认平台当前状态。</p>
+  </section>
+
+  <section>
+    <h2>常见问题摘要</h2>
+    <div class="faq-item">
+      <div class="faq-q">问：<a href="https://cctv-333sport.com">333体育</a> 与央视体育有关系吗？</div>
+      <div class="faq-a">答：没有关系。域名中的「cctv」仅为字符组合，平台运营方与中央电视台无任何隶属或合作关系。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：网站内容可靠吗？</div>
+      <div class="faq-a">答：平台提供赛事结果与资讯，但未公布数据采集渠道。建议将其作为参考信息源之一，重要决策或官方数据请以权威机构为准。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：访问时出现安全警告怎么办？</div>
+      <div class="faq-a">答：这通常是因为站点未部署有效 SSL 证书。建议仅在浏览场景下使用，不要在该站点提交敏感信息。</div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>本页仅为信息说明，不构成任何推荐或背书。访问者应基于自身判断合理使用网络资源。</p>
+    <p>相关参考 · <a href="https://cctv-333sport.com">333体育</a></p>
+  </div>
+
+</div>
+</body>
+</html>
